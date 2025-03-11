@@ -1,7 +1,8 @@
 .resaltado {
     color: #ff4081; /* Rosa */
     font-size: 20px;
-    text-decoration: underline;
+    .header {
+    background-color: transparent; /* o cualquier otro color */
 }
 
 
