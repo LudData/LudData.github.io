@@ -143,3 +143,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Construir formulario y redirigir mail:to
+document.getElementById('sendEmailButton').addEventListener('click', function () {
+    // Obtener los valores del formulario
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    // Construir el enlace mailto
+    const mailtoLink = `mailto:mairaludsotelo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`)}`;
+
+    // Redirigir al enlace mailto
+    window.location.href = mailtoLink;
+});
