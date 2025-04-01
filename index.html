@@ -1,50 +1,341 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Ludmila Sotelo | Data Analyst</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <h1>Hola, soy Ludmila, Analista de Datos.</h1>
-        <p>Estudiante de Ciencia de Datos e IA| Power BI | SQL |Aprendiendo Constantemente</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre Mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">LS</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="cta-button">Contact Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
 
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Soy estudiante de Ciencia de Datos con experiencia en análisis de datos, Power BI y SQL. Apasionado/a por la optimización de procesos y la toma de decisiones basada en datos.</p>
-    </section>
-
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyecto">
-            <h3>📊 Análisis de Denuncias</h3>
-            <p>Un dashboard en Power BI que analiza denuncias de defensa del consumidor en Buenos Aires (2019-2020).</p>
-            <a href="https://github.com/TU_USUARIO/NOMBRE_DEL_REPO" target="_blank">Ver en GitHub</a>
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Turning Data into <span class="highlight">Insights</span></h1>
+                <p>Hi, I'm Ludmila Sotelo, a passionate Data Analyst helping businesses make data-driven decisions.</p>
+                <div class="cta-group">
+                    <a href="#contact" class="cta-primary">Schedule a Consultation</a>
+                    <a href="#projects" class="cta-secondary">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="shape"></div>
+            </div>
         </div>
-        <!-- Agrega más proyectos aquí -->
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>📩 Email: mairaludsotelo@gmail.com</p>
-        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/ludmilasotelo" target="_blank">Ver perfil</a></p>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>The story behind the data analyst</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm a Data Analyst based in Buenos Aires, Argentina, originally from Tucumán. My journey in the world of data has been driven by a passion for uncovering insights that drive strategic decisions.</p>
+                    <p>With a background in Data Science and AI, I specialize in transforming complex datasets into compelling stories that solve real business problems.</p>
+                    <p>I'm particularly interested in projects related to agriculture, finance, and technology sectors, where data can create meaningful impact.</p>
+                    <div class="about-cta">
+                        <a href="resume.pdf" class="button" download><i class="fas fa-download"></i> Download CV</a>
+                        <a href="https://www.linkedin.com/in/ludmilasotelo" class="button" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+                    </div>
+                    <div class="consultation-box">
+                        <h3>Need data expertise for your next project?</h3>
+                        <p>I can help you unlock the power of your data.</p>
+                        <a href="#contact" class="cta-button">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Tools and technologies I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Data Analysis</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-table"></i></div>
+                            <div class="skill-info">
+                                <h4>Excel</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                            <div class="skill-info">
+                                <h4>Power BI</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-google"></i></div>
+                            <div class="skill-info">
+                                <h4>Google Sheets</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>SQL</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="50"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Other Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                            <div class="skill-info">
+                                <h4>Canva</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-file-powerpoint"></i></div>
+                            <div class="skill-info">
+                                <h4>PowerPoint</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <p>Looking for a data analyst with the right skill set?</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <p>My learning journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Associate Degree in Data Science and AI</h3>
+                        <p class="timeline-date">2022 - Present</p>
+                        <p>Currently pursuing a specialized technical degree focusing on data analysis, machine learning, and artificial intelligence applications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Data Analysis Certification</h3>
+                        <p class="timeline-date">2023</p>
+                        <p>Comprehensive professional certification covering data visualization, statistical analysis, and business intelligence tools.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>SQL Fundamentals</h3>
+                        <p class="timeline-date">2022</p>
+                        <p>Specialized course on database management and SQL query optimization for data analysis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <p>Interested in my qualifications?</p>
+                <a href="#contact" class="cta-button">Schedule a Call</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portfolio Projects</h2>
+                <p>My data analysis work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/250" alt="Consumer Complaints Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3>Consumer Complaints Analysis</h3>
+                        <p>A Power BI dashboard analyzing consumer defense complaints in Buenos Aires (2019-2020), revealing key patterns and response effectiveness.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ludmilasotelo/consumer-complaints" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-chart-line"></i> Live Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/250" alt="Agricultural Yield Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3>Agricultural Yield Analysis</h3>
+                        <p>Analysis of crop yields across different regions of Argentina, identifying factors affecting productivity and providing actionable recommendations.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ludmilasotelo/agro-analysis" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-chart-line"></i> Live Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/250" alt="Financial Market Trends">
+                    </div>
+                    <div class="project-content">
+                        <h3>Financial Market Trends</h3>
+                        <p>Interactive visualization of financial market trends in LATAM, with predictive models for market behavior based on historical data.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ludmilasotelo/finance-trends" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-chart-line"></i> Live Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <p>Need similar analysis for your business?</p>
+                <a href="#contact" class="cta-button">Let's Discuss Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <p>Let's transform your data together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>mairaludsotelo@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/ludmilasotelo" target="_blank">ludmilasotelo</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Buenos Aires, Argentina</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>© 2025 | Mi Portafolio</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ludmila Sotelo | Data Analyst</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ludmilasotelo" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ludmilasotelo" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
