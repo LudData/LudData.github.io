@@ -3,82 +3,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Ludmila Sotelo | Data Analyst</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header
-        <h1>style="font-size: 50px✨ Hola! que gusto tenerte en mi perfil👋🏼.</h1>
-        <p>🤓Mi nombre es Ludmila y estoy en un viaje apasionante en el mundo de los Datos!
-
-              Actualmente, me encuentro cursando una tecnicatura en Ciencias de Datos e IA.
-
-              Me motiva el continuo aprendizaje en esta área, los datos me inspiran a contar historias y transformar información en conocimiento que genere impacto.</p> ✨🚀</p>  
-        </p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre Mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">LS</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#education">Formación</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact" class="cta-button">¡Hablemos!</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
 
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-         <p> 🌍 Soy de Argentina- Tucúman, Viviendo en la Ciudad de la Furia🌃</p>
-
-         <p>🤓 Estudiande de la Carrera de Ciencia de Datos e Inteligencia Artificial✨</p>
-
-         <p> 🌠 Me apasione por este mundo de los datos, descubri que se puede resolver problemas y ayudar a la toma de decisiones estratégicas.</p>
-
-​​         <p> ➡️ Apasionada por la Tecnologia, la Creatividad y la Innovacion.</p>
-
-         <p>➡️ Me encanta el mercado Agro, Amo el campo! pero me interesan tambien proyectos relacionados a Finanzas y Tecnologias!🌱.</p>
-    </section>
-
-     <section id="Mis habilidades">
-
-         <p>💻 Excel- Avanzado</p>
-
-         <p>💻 Google Sheets- Avanzado</p>
-
-         <p>💻 Power BI- Intermedio</p>
-
-         <p>💻 SQL- Basico</p>
-
-         <p>💻 Canva- Avanzado</p>
-
-        <p>💻 Power Point- Avanzado</p>
-
-        <p>💻 Python- Basico</p>
-
-          
-
-
-
-         
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyecto">
-            <h3>📊 Análisis de Denuncias</h3>
-            <p>Un dashboard en Power BI que analiza denuncias de defensa del consumidor en Buenos Aires (2019-2020).</p>
-            <a href="https://github.com/TU_USUARIO/NOMBRE_DEL_REPO" target="_blank">Ver en GitHub</a>
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Convirtiendo Datos en <span class="highlight">Historias</span></h1>
+                <p>¡Hola! Soy Ludmila Sotelo, una Data Analyst apasionada por ayudar a empresas a descubrir el poder de sus datos y tomar decisiones que impulsen su crecimiento.</p>
+                <div class="cta-group">
+                    <a href="#contact" class="cta-primary">Charlemos de tu proyecto</a>
+                    <a href="#projects" class="cta-secondary">Conoce mi trabajo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Reemplazar este div shape por una imagen -->
+                <!-- <div class="shape"></div> -->
+                <img src="media/about_photo.jpg" alt="Ludmila Sotelo" class="hero-portrait">
+            </div>
         </div>
-        <!-- Agrega más proyectos aquí -->
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>📩 Email: mairaludsotelo@gmail.com</p>
-        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/ludmilasotelo" target="_blank">Ver perfil</a></p>
+    <section id="about" class="about">
+        <div class="about-bg-shape"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Mí</h2>
+                <p>La persona detrás de los números</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="about-image-frame">
+                        <img class="about-image" src="media/hero_photo.jpg" alt="Foto de Ludmila Sotelo">
+                    </div>
+                    <div class="about-image-decoration"></div>
+                </div>
+                <div class="about-text">
+                    <div class="about-text-item">
+                        <div class="about-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <p>Soy una tucumana viviendo en Buenos Aires, donde descubrí mi pasión por transformar datos en soluciones prácticas. Mi camino en este mundo comenzó con curiosidad y hoy se ha convertido en mi forma favorita de resolver problemas.</p>
+                    </div>
+                    <div class="about-text-item">
+                        <div class="about-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <p>Con mi formación en Ciencia de Datos e IA, no solo analizo información, sino que la convierto en historias que tienen sentido y aportan valor real. Me encanta ver cómo los datos pueden cambiar la perspectiva y abrir nuevas posibilidades.</p>
+                    </div>
+                    <div class="about-text-item">
+                        <div class="about-icon"><i class="fas fa-heart"></i></div>
+                        <p>Me apasionan especialmente los proyectos relacionados con agricultura, finanzas y tecnología, donde cada análisis puede generar un impacto positivo y tangible en el mundo real.</p>
+                    </div>
+                    <div class="about-cta">
+                        <a href="media/ludmila_sotelo-data_analyst.pdf" class="button" download><i class="fas fa-download"></i> Descarga mi CV</a>
+                        <a href="https://www.linkedin.com/in/ludmilasotelo" class="button" target="_blank"><i class="fab fa-linkedin"></i> Conóceme en LinkedIn</a>
+                    </div>
+                    <div class="consultation-box">
+                        <h3>¿Tienes datos que no sabes cómo aprovechar?</h3>
+                        <p>Juntos podemos descubrir el tesoro que esconden tus datos.</p>
+                        <a href="#contact" class="cta-button">Conversemos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mis Herramientas</h2>
+                <p>Lo que me apasiona hacer todos los días</p>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Análisis de Datos</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-table"></i></div>
+                            <div class="skill-info">
+                                <h4>Excel</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                            <div class="skill-info">
+                                <h4>Power BI</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-google"></i></div>
+                            <div class="skill-info">
+                                <h4>Google Sheets</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programación</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>SQL</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="50"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Otras Herramientas</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                            <div class="skill-info">
+                                <h4>Canva</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-file-powerpoint"></i></div>
+                            <div class="skill-info">
+                                <h4>PowerPoint</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <p>¿Necesitas una Data Analyst que hable tu mismo idioma?</p>
+                <a href="#contact" class="cta-button">Escríbeme</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mi Formación</h2>
+                <p>El camino recorrido hasta aquí</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Tecnicatura en Ciencia de Datos e IA</h3>
+                        <p class="timeline-date">2022 - Presente</p>
+                        <p>Actualmente explorando el fascinante mundo del análisis de datos avanzado, machine learning e inteligencia artificial para crear soluciones innovadoras.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Certificación en Análisis de Datos</h3>
+                        <p class="timeline-date">2023</p>
+                        <p>Me sumergí en el arte de la visualización, análisis estadístico y herramientas de business intelligence para contar historias con datos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Fundamentos de SQL</h3>
+                        <p class="timeline-date">2022</p>
+                        <p>Aprendí a dominar el lenguaje que me permite dialogar con las bases de datos y extraer exactamente lo que necesito para cada análisis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <p>¿Quieres saber más sobre mi experiencia?</p>
+                <a href="#contact" class="cta-button">Agendemos una llamada</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mis Proyectos</h2>
+                <p>Datos que cuentan historias</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="media/projects/quejas_consumidor.png" alt="Análisis de Quejas de Consumidores">
+                    </div>
+                    <div class="project-content">
+                        <h3>Análisis de Quejas de Consumidores</h3>
+                        <p>Creé un dashboard que revela patrones ocultos en las quejas de defensa al consumidor en Buenos Aires (2019-2020), ayudando a mejorar los tiempos de respuesta y la satisfacción del cliente.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ludmilasotelo/consumer-complaints" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Explora el código
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-chart-line"></i> Mira el dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="media/projects/agro_rendimiento.png" alt="Análisis de Rendimiento Agrícola">
+                    </div>
+                    <div class="project-content">
+                        <h3>Análisis de Rendimiento Agrícola</h3>
+                        <p>Descubrí qué factores realmente impactan en la productividad de los cultivos en distintas regiones de Argentina, ofreciendo recomendaciones prácticas que pueden mejorar los rendimientos.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ludmilasotelo/agro-analysis" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Explora el código
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-chart-line"></i> Mira el dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="media/projects/tendencias_financieras.png" alt="Tendencias del Mercado Financiero">
+                    </div>
+                    <div class="project-content">
+                        <h3>Tendencias del Mercado Financiero</h3>
+                        <p>Desarrollé visualizaciones interactivas que permiten entender las tendencias financieras en LATAM de un vistazo, complementadas con modelos que anticipan comportamientos futuros del mercado.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ludmilasotelo/finance-trends" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Explora el código
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-chart-line"></i> Mira el dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <p>¿Te gustaría ver algo similar para tu negocio?</p>
+                <a href="#contact" class="cta-button">Cuéntame tu idea</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conversemos</h2>
+                <p>El primer café (virtual) va por mi cuenta</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>mairaludsotelo@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/ludmilasotelo" target="_blank">ludmilasotelo</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Ubicación</h3>
+                        <p>Buenos Aires, Argentina</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Escríbeme un mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Tu nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Tu email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">¿De qué quieres hablar?</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Cuéntame más detalles</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="button" id="sendEmailButton" class="cta-button">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>© 2025 | Mi Portafolio</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ludmila Sotelo | Data Analyst</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ludmilasotelo" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ludmilasotelo" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
